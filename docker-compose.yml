@@ -1,0 +1,26 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+      - rabbitmq
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Anmol@8907
+      POSTGRES_DB: tanxficoins
+    ports:
+      - "5432:5432"
+  rabbitmq:
+    image: rabbitmq:management
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+    ports:
+      - "5672:5672"
+      - "15672:15672"
