@@ -1,6 +1,6 @@
-# Crypto Price Alert System
+# Tanxfi coin Price Alert System
 
-This project implements a Crypto Price Alert System that allows users to set alerts for specific cryptocurrencies and receive notifications when the target prices are reached.
+This project implements a Tanxfi coin Price Alert System that allows users to set alerts for specific cryptocurrencies and receive notifications when the target prices are reached.
 
 ## Setup and Run
 
@@ -10,8 +10,8 @@ This project implements a Crypto Price Alert System that allows users to set ale
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/crypto-price-alert.git
-   cd crypto-price-alert
+   git clone https://github.com/janmeshjs/tanx_backend.git
+   cd tanx_backend
 2. Build and run the Docker containers:
     ```bash
     docker-compose up --build
